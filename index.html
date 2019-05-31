@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" My New Hugo Site" />
+  	<meta property="og:site_name" content="My New Hugo Site" />
+  	<meta property="og:url" content="https://zdfan.github.io/" />
+    
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     My New Hugo Site
+  </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://zdfan.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://zdfan.github.io/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="https://zdfan.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+      
+        <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+      
+    
+    <meta name="generator" content="Hugo 0.55.6" />
+
+    <link rel="canonical" href="https://zdfan.github.io/" />
+
+     
+</head>
+<body class="nav-closed">
+<div id="particles-js"></div>
+  
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header no-cover">
+
+    
+
+    <nav class="main-nav overlay clearfix">
+        
+        
+    </nav>
+<div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+              <a class="btn-bootstrap-2 title-scroll" href="#content">My New Hugo Site</a>
+          </h1>
+          <h2 class="page-description"></h2>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+
+    
+
+    <div class="extra-pagination inner">
+        <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+    </div>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/blog/">Blog</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            
+
+<h1 id="part-based-convolutional-baseline-for-person-retrieval-and-the-refined-part-pooling">Part-based Convolutional Baseline for Person Retrieval and the Refined Part Pooling</h1>
+
+<p>Code for the paper <a href="https://arxiv.org/pdf/1711.09349.pdf">Beyond Part Models: Person Retrieval with Refined Part Pooling (and A Strong Convolutional Baseline)</a>.</p>
+
+<p><strong>This code is ONLY</strong> released for academic use.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p><font face="Times New Roman" size=4></p>
+
+<p><strong>Prerequisite: Python 2.7 and Pytorch 0.3+</strong></p>
+
+<ol>
+<li><p>Install <a href="https://pytorch.org/">Pytorch</a></p></li>
+
+<li><p>Download dataset
+a. Market-1501 <a href="https://pan.baidu.com/s/1ntIi2Op?errno=0&amp;errmsg=Auth%20Login%20Sucess&amp;&amp;bduss=&amp;ssnerror=0&amp;traceid=">BaiduYun</a>
+b. DukeMTMC-reID<a href="https://pan.baidu.com/share/init?surl=jS0XM7Var5nQGcbf9xUztw">BaiduYun</a> (password:bhbh)
+c. Move them to <code>~/datasets/Market-1501/(DukeMTMC-reID)</code>
+</font></p></li>
+</ol>
+
+<h2 id="train-pcbu">train PCBu</h2>
+
+<p><font face="Times New Roman" size=4></p>
+
+<pre><code class="language-sh">With Pytorch 0.4.0, we shall get about 93.0% rank-1 accuracy and 78.0% mAP on Market-1501.
+&lt;/font&gt;
+
+## train RPP
+&lt;font face=&quot;Times New Roman&quot; size=4&gt;
+
+```sh train_RPP.sh```
+With Pytorch 0.4.0, we shall get about 93.5% rank-1 accuracy and 81.5% mAP on Market-1501.
+&lt;/font&gt;
+
+## Citiaion
+&lt;font face=&quot;times new roman&quot; size=4&gt;
+
+Please cite this paper in your publications if it helps your research:
+&lt;/font&gt;
+
+</code></pre>
+
+<p>@inproceedings{sun2018PCB,
+  author    = {Yifan Sun and
+               Liang Zheng and
+               Yi Yang and
+               Qi Tian and
+               Shengjin Wang},
+  title     = {Beyond Part Models: Person Retrieval with Refined Part Pooling (and A Strong Convolutional Baseline)},
+  booktitle   = {ECCV},
+  year      = {2018},
+}
+```</p>
+
+          </section>
+      </p>
+      
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+        <time class="post-date" datetime="2019-05-31T14:32:50&#43;08:00">
+            31 May 2019
+        </time>
+    </footer>
+</article>
+
+    
+
+    <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+
+</main>
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">My New Hugo Site</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://zdfan.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://zdfan.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://zdfan.github.io/js/index.js"></script>
+    <script src="https://zdfan.github.io/js/particles.min.js"></script>
+    <script src="https://zdfan.github.io/js/particles.js"></script>  
+
+</body>
+</html>
+
